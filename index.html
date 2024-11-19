@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Mario Quiz</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Fonte Bangers do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <style>
         /* Estilos Gerais */
         body {
@@ -14,19 +15,20 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            background-color: #87CEEB;
-            font-family: 'Press Start 2P', cursive;
+            background-color: #87CEEB; /* Azul claro do céu do Reino dos Cogumelos */
+            font-family: 'Bangers', cursive;
         }
 
         /* Título Temático */
         .title {
-            font-size: 48px;
-            color: #ff4500; /* Vermelho inspirado no chapéu do Mario */
+            font-size: 56px;
+            color: #ff4500; /* Vermelho vibrante inspirado no chapéu do Mario */
             text-align: center;
             margin-bottom: 40px;
-            text-shadow: 4px 4px 0 #ffd700, 8px 8px 0 #2980b9; /* Efeito de sombra com cores temáticas */
+            text-shadow: 4px 4px 0 #ffd700, 6px 6px 0 #2980b9, 8px 8px 0 #2ecc71; /* Sombras multicoloridas */
             animation: jump 1.5s infinite;
             position: relative;
+            letter-spacing: 2px;
         }
 
         /* Animação de pulo */
@@ -39,22 +41,22 @@
             }
         }
 
-        /* Estrela decorativa */
+        /* Estrelas decorativas */
         .title:before {
             content: '⭐';
             position: absolute;
-            left: -40px;
+            left: -50px;
             top: 0;
-            font-size: 48px;
+            font-size: 50px;
             animation: spin 1.5s linear infinite;
         }
 
         .title:after {
             content: '⭐';
             position: absolute;
-            right: -40px;
+            right: -50px;
             top: 0;
-            font-size: 48px;
+            font-size: 50px;
             animation: spin 1.5s linear infinite reverse;
         }
 
